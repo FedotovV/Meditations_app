@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditations_app/screen/home_screen.dart';
 import 'package:meditations_app/screen/meditation_app_screen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: const MeditationAppScreen(),
+      home: const HomePageScreen(),
     );
   }
 }
