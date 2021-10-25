@@ -1,36 +1,23 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
+// import 'package:flutter/rendering.dart';
+// import 'package:intro_views_flutter/intro_views_flutter.dart';
 
-// ignore: unused_element
-const _expandetImage = Image(
-  image: AssetImage('meditation_images/yoga.jpg'),
-  fit: BoxFit.cover,
-);
+// class HomePageScreen extends StatelessWidget {
+//    HomePageScreen({Key? key}) : super(key: key);
 
-class HomePageScreen extends StatefulWidget {
-  const HomePageScreen({Key? key}) : super(key: key);
+// final pages = [
+//    PageViewModel(
+//     pageColor: Colors.black,
+//     body: Text('Body'),
+//     title: Text('Title'),
+//     textStyle: TextStyle(color: Colors.white, fontSize: 40),
+//     mainImage: Image.asset('meditation_images/male.jpg')
+//   )
+// ];
 
-  @override
-  _HomePageScreenState createState() => _HomePageScreenState();
-}
+//   @override
+//   Widget build(BuildContext context) {
+// return
 
-class _HomePageScreenState extends State<HomePageScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
-        child: CustomScrollView(
-          slivers: [
-            SliverAppBar(
-              title: Text('Meditation app'),
-              expandedHeight: 200,
-              flexibleSpace: FlexibleSpaceBar(
-                background: _expandetImage,
-              ),
-              floating: true,
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}
+//   }
+// }
