@@ -41,6 +41,14 @@ class _MeditationAppScreenState extends State<MeditationAppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black54,
+      appBar: AppBar(
+        title: const Text(
+          'Soothing sounds',
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+        backgroundColor: Colors.black54,
+      ),
       body: SafeArea(
         child: ListView.builder(
             itemCount: items.length,
