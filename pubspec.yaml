@@ -37,6 +37,7 @@ dependencies:
   intro_views_flutter: any
   just_audio: ^0.9.12
   font_awesome_flutter: ^9.1.0
+  animated_text_kit: ^4.2.1
 
 dev_dependencies:
   flutter_test:

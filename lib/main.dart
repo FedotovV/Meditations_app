@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
 import 'package:meditations_app/screen/meditation_app_screen.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,17 +38,28 @@ final pages = [
     pageColor: Colors.black,
     body: const Text(
         'Choose the right setting to focus. Silence is your friend.'),
-    title: const Text('Follow the situation'),
+    title: AnimatedTextKit(
+      animatedTexts: [
+        TypewriterAnimatedText('Follow the situation',
+            speed: const Duration(milliseconds: 175)),
+      ],
+    ),
     textStyle: const TextStyle(color: Colors.white, fontSize: 30),
     mainImage: Image.asset(
       'meditation_images/manBsml.jpg',
       fit: BoxFit.cover,
+      alignment: Alignment.center,
     ),
   ),
   PageViewModel(
     pageColor: Colors.black,
     body: const Text('Experiment and try. Until then, start with the sounds.'),
-    title: const Text('Try different techniques'),
+    title: AnimatedTextKit(
+      animatedTexts: [
+        TypewriterAnimatedText('Try different techniques',
+            speed: const Duration(microseconds: 175))
+      ],
+    ),
     textStyle: const TextStyle(color: Colors.white, fontSize: 30),
     mainImage: Image.asset(
       'meditation_images/manY.jpg',
@@ -58,8 +70,12 @@ final pages = [
     pageColor: Colors.black,
     body: const Text(
         'Our application will help you comprehend relaxation. Use and enjoy.'),
-    title: const Text('Use apps'),
-    textStyle: const TextStyle(color: Colors.red, fontSize: 30),
+    title: AnimatedTextKit(
+      animatedTexts: [
+        TyperAnimatedText('Use apps', speed: const Duration(milliseconds: 175)),
+      ],
+    ),
+    textStyle: const TextStyle(color: Colors.white, fontSize: 30),
     mainImage: Image.asset(
       'meditation_images/girlY.jpg',
       fit: BoxFit.cover,
